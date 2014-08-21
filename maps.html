@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <title></title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/image_slide.js"></script>
+    <script
+            src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
+    </script>
+    <script type="text/javascript">
+
+        var map = null;
+        function initialize() {
+            var myOptions = {
+                zoom: 7,
+                center: new google.maps.LatLng(53.412910000000000000,-8.243889999999965000 ),
+                mapTypeControl: true,
+                mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+                navigationControl: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            map = new google.maps.Map(document.getElementById("map_canvas"),
+                    myOptions);
+
+            google.maps.event.addListener(map, 'click', function() {
+                infowindow.close();
+            });
+
+            // Add markers to the map
+            // Set up three markers with info windows
+
+            var point = new google.maps.LatLng(52.971387099999990000,-9.424435899999935000);
+            var marker = createMarker(point,'<IMG BORDER="" ALIGN="center" SRC="images/moher1.jpg"><br/> <a><b>Cliffs Of Moher</b></a> ')
+
+            var point = new google.maps.LatLng(54.713629999999990000 ,-6.214280000000031000);
+            var marker = createMarker(point,'<IMG BORDER="0" ALIGN="center" SRC="images/giants-causeway1.jpg"><br/> <p><b>Giants Causeway</b></p> ')
+
+            var point = new google.maps.LatLng(53.679949800000000000 ,-6.444939599999998000 );
+            var marker = createMarker(point,'<IMG BORDER="0" ALIGN="center" SRC="images/newgrange.jpg"><br/> <p><b>Newgrange</b></p> ')
+			
+			 var point = new google.maps.LatLng(53.577500000000000000  ,-6.611944399999970000  );
+            var marker = createMarker(point,'<IMG BORDER="0" ALIGN="center" SRC="images/hill-of Tara1.jpg"><br/> <p><b>Hill-of Tara</b></p> ')
+
+        }
+
+        var infowindow = new google.maps.InfoWindow(
+                {
+                    size: new google.maps.Size(150,40)
+                });
+
+        function createMarker(latlng, html) {
+            var contentString = html;
+            var marker = new google.maps.Marker({
+
+
+
+                position: latlng,
+                map: map,
+                zIndex: Math.round(latlng.lat()*-100000)<<5
+            });
+
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.setContent(contentString);
+                infowindow.open(map,marker);
+            });
+        }
+
+
+
+    </script>
+
+</head>
+
+<body onload="initialize()">
+
+<div id="main">
+    <div id="header">
+        <div id="banner">
+            <div id="welcome">
+                <h1>IRELAND.IE</h1>
+            </div><!--close welcome-->
+            <div id="welcome_slogan">
+                <h1>Welcome to Ireland</h1>
+            </div><!--close welcome_slogan-->
+        </div><!--close banner-->
+    </div><!--close header-->
+
+    <div id="menubar">
+        <ul id="menu">
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="maps.html">Map</a><li>
+            <li><a href="quiz.html">Quiz</a><li>
+            <li><a href="gallery.html">Gallery</a></li>
+			 <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div><!--close menubar-->
+
+    <div id="site_content">
+
+           <div class="sidebar_container">
+            <div class="sidebar">
+                <div class="sidebar_item">
+                    <h2>Lisdoonvarna Matchmaking Festival</h2>
+					<h3>September 2013</h3>
+                    <p>Every year hundreds of singles and thousands of supporters flood the Clare 
+					town of Lisdoonvarna in September - to find the partner for life or to simply have a good time. 
+					Matchmakers match prospective partners in a time-honored tradition and everybody is happy.</p>
+					</p><a href="http://www.ireland.ie/" zT="-o1/XJ" target="_blank">More: Review of the Lisdoonvarna Matchmaking Festival</a>
+                </div><!--close sidebar_item-->
+            </div><!--close sidebar-->
+            <div class="sidebar">
+                <div class="sidebar_item">
+                    <h2>Killorglin Puck Fair</h2>
+                    <h3>August 2013</h3>
+                    <p>
+A goat is crowned king in the Kerry town of Killorglin and all hell breaks loose - not a plot for a cheap horror flick but a tradition with pagan roots. 
+Still practiced for three days every August, on the 10th, 11th and 12th.  Don't miss the election of the "Queen of Puck"!
+</p>
+</p><a href="http://www.ireland.ie/" zT="-o1/XJ" target="_blank">More: Puck Fair Website</a>
+                </div><!--close sidebar_item-->
+            </div><!--close sidebar-->
+            <div class="sidebar">
+                <div class="sidebar_item">
+				<h2>Rose of Tralee</h2>
+                    <h3>september 2013</h3>
+                    <p>
+A beauty pageant of saccharine sweetness with Irish colleens from all over the world competing for the title of the "Rose of Tralee". 
+ yet the live programs on RTÉ regularly are amongst the most popular TV events every August!
+</p>
+</p><a href="http://www.roseoftralee.ie/" zT="-o1/XJ" target="_blank">More:Guide Review of the Rose of Tralee</a>
+                </div><!--close sidebar_item-->
+            </div><!--close sidebar-->
+            <div class="sidebar">
+                <div class="sidebar_item">
+				<h2>Fleadh Cheoil na hEireann</h2>
+                    <h3>August 2013</h3>
+                    <p>Ireland's national music festival and a feast for lovers of traditional folk.
+</p><a href="http://www.ireland.ie/" zT="-o1/XJ" target="_blank">More: Check for details on www.ireland.ie</a>
+                </div><!--close sidebar_item-->
+            </div><!--close sidebar-->
+            <div class="sidebar">
+                <div class="sidebar_item">
+                    <h2>Contact</h2>
+                    <p>Phone: +353 (01)1234 567891</p>
+                    <p>Email: <a href="mailto:info@ireland.ie">info@ireland.ie</a></p>
+                </div><!--close sidebar_item-->
+            </div><!--close sidebar-->
+        </div><!--close sidebar_container-->
+
+        <div class="slideshow">
+            <ul class="slideshow">
+                <li class="show"><img width="680" height="250" src="images/cliffs-of-moher-image1.jpg" alt="&quot; Cliffs of Moher&quot;" /></li>
+                <li><img width="680" height="250" src="images/ireland-shannon-image2.jpg" alt="&quot;So many places in ireland you will never get bored&quot;" /></li>
+                <li><img width="680" height="250" src="images/kylemore-abbey.jpg" alt="&quot;The spellbinding kylemore abbey&quot;" /></li>
+                <li><img width="680" height="250" src="images/main_killarney-image4.jpg" alt="&quot;Killarney National Parks Co Kerry&quot;" /></li>
+
+
+            </ul>
+        </div>
+
+        <div id="content">
+            <div class="content_item">
+                <h1>Scenic Locations </h1>
+                  <p><b>Click on the markers to view scenic images around Ireland</b> </p>
+                <div id="map_canvas" style="width: 680px; height: 900px">
+
+                </div><!--close map_item-->
+        </div><!--close content-->
+    </div><!--close site_content-->
+
+
+
+</div><!--close main-->
+
+<div id="footer">
+    &copy; IRELAND.IE IRL COPYRIGHT 2013
+</div><!--close footer-->
+
+</body>
+</html>

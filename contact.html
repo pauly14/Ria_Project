@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <title> form validation</title>
+	<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js"></script>
+   
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/image_slide.js"></script>
+	 <script type="text/javascript" src="js/validation.js"></script>
+    <script
+            src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
+    </script>
+    <script type="text/javascript">
+
+      
+
+
+    </script>
+	<script> 
+var myVideo=document.getElementById("video1"); 
+
+function playPause()
+{ 
+if (myVideo.paused) 
+  myVideo.play(); 
+else 
+  myVideo.pause(); 
+} 
+
+function makeBig()
+{ 
+myVideo.width=560; 
+} 
+
+function makeSmall()
+{ 
+myVideo.width=320; 
+} 
+
+function makeNormal()
+{ 
+myVideo.width=420; 
+} 
+</script> 
+	
+<style type="text/css">
+body, input, textarea {
+	font-size:14px;
+	line-height:20px;
+	font-family:Verdana, Geneva, sans-serif;
+}
+input {width:300px;}
+.submit {width:220px;}
+
+#error {
+	color:green;
+	font-size:16px;
+	display:none;
+}
+.needsfilled {
+	background:red;
+	color:white;
+}
+</style>
+</head>
+
+<body onload="initialize()">
+
+<div id="main">
+    <div id="header">
+        <div id="banner">
+            <div id="welcome">
+                <h1>IRELAND.IE</h1>
+            </div><!--close welcome-->
+            <div id="welcome_slogan">
+                <h1>Welcome to Ireland</h1>
+            </div><!--close welcome_slogan-->
+        </div><!--close banner-->
+    </div><!--close header-->
+
+    <div id="menubar">
+        <ul id="menu">
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="maps.html">Map</a><li>
+            <li><a href="quiz.html">Quiz</a><li>
+            <li><a href="gallery.html">Gallery</a></li>
+			 <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div><!--close menubar-->
+
+    <div id="site_content">
+
+           <div class="sidebar_container">
+            <div class="sidebar">
+                <div class="sidebar_item">
+                    <h2>Lisdoonvarna Matchmaking Festival</h2>
+					<h3>September 2013</h3>
+                    <p>Every year hundreds of singles and thousands of supporters flood the Clare 
+					town of Lisdoonvarna in September - to find the partner for life or to simply have a good time. 
+					Matchmakers match prospective partners in a time-honored tradition and everybody is happy.</p>
+					</p><a href="http://www.ireland.ie/" zT="-o1/XJ" target="_blank">More: Review of the Lisdoonvarna Matchmaking Festival</a>
+                </div><!--close sidebar_item-->
+            </div><!--close sidebar-->
+            <div class="sidebar">
+                <div class="sidebar_item">
+                    <h2>Killorglin Puck Fair</h2>
+                    <h3>August 2013</h3>
+                    <p>
+A goat is crowned king in the Kerry town of Killorglin and all hell breaks loose - not a plot for a cheap horror flick but a tradition with pagan roots. 
+Still practiced for three days every August, on the 10th, 11th and 12th.  Don't miss the election of the "Queen of Puck"!
+</p>
+</p><a href="http://www.ireland.ie/" zT="-o1/XJ" target="_blank">More: Puck Fair Website</a>
+                </div><!--close sidebar_item-->
+            </div><!--close sidebar-->
+            <div class="sidebar">
+                <div class="sidebar_item">
+				<h2>Rose of Tralee</h2>
+                    <h3>september 2013</h3>
+                    <p>
+A beauty pageant of saccharine sweetness with Irish colleens from all over the world competing for the title of the "Rose of Tralee". 
+ yet the live programs on RTÉ regularly are amongst the most popular TV events every August!
+</p>
+</p><a href="http://www.roseoftralee.ie/" zT="-o1/XJ" target="_blank">More:Guide Review of the Rose of Tralee</a>
+                </div><!--close sidebar_item-->
+            </div><!--close sidebar-->
+            <div class="sidebar">
+                <div class="sidebar_item">
+				<h2>Fleadh Cheoil na hEireann</h2>
+                    <h3>August 2013</h3>
+                    <p>Ireland's national music festival and a feast for lovers of traditional folk.
+</p><a href="http://www.ireland.ie/" zT="-o1/XJ" target="_blank">More: Check for details on www.ireland.ie</a>
+                </div><!--close sidebar_item-->
+            </div><!--close sidebar-->
+            <div class="sidebar">
+                <div class="sidebar_item">
+                    <h2>Contact</h2>
+                    <p>Phone: +353 (01)1234 567891</p>
+                    <p>Email: <a href="mailto:info@ireland.ie">info@ireland.ie</a></p>
+                </div><!--close sidebar_item-->
+            </div><!--close sidebar-->
+        </div><!--close sidebar_container-->
+
+        <div class="slideshow">
+            <ul class="slideshow">
+                <li class="show"><img width="680" height="250" src="images/cliffs-of-moher-image1.jpg" alt="&quot; Cliffs of Moher&quot;" /></li>
+                <li><img width="680" height="250" src="images/ireland-shannon-image2.jpg" alt="&quot;So many places in ireland you will never get bored&quot;" /></li>
+                <li><img width="680" height="250" src="images/kylemore-abbey.jpg" alt="&quot;The spellbinding kylemore abbey&quot;" /></li>
+                <li><img width="680" height="250" src="images/main_killarney-image4.jpg" alt="&quot;Killarney National Parks Co Kerry&quot;" /></li>
+
+
+            </ul>
+        </div>
+
+        <div id="content">
+            <div class="content_item">
+  <form action="mail.php" id="theform" name="theform" method="post">
+              <p><label for="name">Name</label><br /><input id="name" type="text" value="" name="name" /></p>
+               <p><label for="email">E-mail</label><br /><input id="email" type="text" value="" name="email" /></p>
+                <p><label for="message">Message</label><br /><textarea id="message" rows="10" cols="60"  name="message"></textarea></p>
+                  <p><input class="submit" type="submit" name="submit" value="Submit Form" /></p>
+        <p id="error">There were errors on the form, please make sure all fields are fill out correctly.</p>
+</form> 
+<h1>About Us</h1>
+
+<p>IRELAND.IE is the National Tourism Development Authority. Our role is to support the tourism industry and work to sustain Ireland as a high-quality and competitive tourism destination. We provide a range of practical business supports to help tourism businesses better manage and market their products and services.
+
+ We also work with other state agencies and representative bodies, at local and national levels, to implement and champion positive and practical strategies that will benefit Irish tourism and the Irish economy.
+
+ We promote Ireland as a holiday destination through our domestic marketing campaign (DiscoverIreland.ie) and manage a network of nationwide tourist information centres that provide help and advice for visitors to Ireland.</p>
+                </div><!--close form_item-->
+        </div><!--close content-->
+		
+		<div style="text-align:center"> 
+		<iframe width="420" height="315" src="http://www.youtube.com/embed/25CoIu3zUfM" frameborder="0" allowfullscreen></iframe>
+		
+  
+
+</div> 
+		
+		
+    </div><!--close site_content-->
+
+
+
+
+</div><!--close main-->
+
+<div id="footer">
+    &copy; IRELAND.IE IRL COPYRIGHT 2013
+</div><!--close footer-->
+
+</body>
+</html>

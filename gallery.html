@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <title></title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/image_slide.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"> </script>
+<script>
+$(document).ready(function() {
+ 
+	//ACCORDION BUTTON ACTION	
+	$('div.accordionButton').click(function() {
+		$('div.accordionContent').slideUp('normal');	
+		$(this).next().slideDown('normal');
+	});
+ 
+	//HIDE THE DIVS ON PAGE LOAD	
+	$("div.accordionContent").hide();
+ 
+});
+
+
+
+
+</script>
+</head>
+
+<body>
+<div id="main">
+    <div id="header">
+        <div id="banner">
+            <div id="welcome">
+                <h1>IRELAND.IE</h1>
+            </div><!--close welcome-->
+            <div id="welcome_slogan">
+                <h1>Welcome to Ireland</h1>
+            </div><!--close welcome_slogan-->
+        </div><!--close banner-->
+    </div><!--close header-->
+
+    <div id="menubar">
+        <ul id="menu">
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="maps.html">Map</a><li>
+            <li><a href="quiz.html">Quiz</a><li>
+            <li><a href="gallery.html">Gallery</a></li>
+			 <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div><!--close menubar-->
+
+    <div id="site_content">
+
+        <div class="sidebar_container">
+            <div class="sidebar">
+                <div class="sidebar_item">
+                    <h2>Lisdoonvarna Matchmaking Festival</h2>
+					<h3>September 2013</h3>
+                    <p>Every year hundreds of singles and thousands of supporters flood the Clare 
+					town of Lisdoonvarna in September - to find the partner for life or to simply have a good time. 
+					Matchmakers match prospective partners in a time-honored tradition and everybody is happy.</p>
+					</p><a href="http://www.ireland.ie/" zT="-o1/XJ" target="_blank">More: Review of the Lisdoonvarna Matchmaking Festival</a>
+                </div><!--close sidebar_item-->
+            </div><!--close sidebar-->
+            <div class="sidebar">
+                <div class="sidebar_item">
+                    <h2>Killorglin Puck Fair</h2>
+                    <h3>August 2013</h3>
+                    <p>
+A goat is crowned king in the Kerry town of Killorglin and all hell breaks loose - not a plot for a cheap horror flick but a tradition with pagan roots. 
+Still practiced for three days every August, on the 10th, 11th and 12th.  Don't miss the election of the "Queen of Puck"!
+</p>
+</p><a href="http://www.ireland.ie/" zT="-o1/XJ" target="_blank">More: Puck Fair Website</a>
+                </div><!--close sidebar_item-->
+            </div><!--close sidebar-->
+            <div class="sidebar">
+                <div class="sidebar_item">
+				<h2>Rose of Tralee</h2>
+                    <h3>september 2013</h3>
+                    <p>
+A beauty pageant of saccharine sweetness with Irish colleens from all over the world competing for the title of the "Rose of Tralee". 
+ yet the live programs on RTÉ regularly are amongst the most popular TV events every August!
+</p>
+</p><a href="http://www.roseoftralee.ie/" zT="-o1/XJ" target="_blank">More:Guide Review of the Rose of Tralee</a>
+                </div><!--close sidebar_item-->
+            </div><!--close sidebar-->
+            <div class="sidebar">
+                <div class="sidebar_item">
+				<h2>Fleadh Cheoil na hEireann</h2>
+                    <h3>August 2013</h3>
+                    <p>Ireland's national music festival and a feast for lovers of traditional folk.
+</p><a href="http://www.ireland.ie/" zT="-o1/XJ" target="_blank">More: Check for details on www.ireland.ie</a>
+                </div><!--close sidebar_item-->
+            </div><!--close sidebar-->
+            <div class="sidebar">
+                <div class="sidebar_item">
+                    <h2>Contact</h2>
+                    <p>Phone: +353 (01)1234 567891</p>
+                    <p>Email: <a href="mailto:info@ireland.ie">info@ireland.ie</a></p>
+                </div><!--close sidebar_item-->
+            </div><!--close sidebar-->
+        </div><!--close sidebar_container-->
+
+        <div class="slideshow">
+            <ul class="slideshow">
+                <li class="show"><img width="680" height="250" src="images/cliffs-of-moher-image1.jpg" alt="&quot; Cliffs of Moher&quot;" /></li>
+                <li><img width="680" height="250" src="images/ireland-shannon-image2.jpg" alt="&quot;So many places in ireland you will never get bored&quot;" /></li>
+                <li><img width="680" height="250" src="images/kylemore-abbey.jpg" alt="&quot;The spellbinding kylemore abbey&quot;" /></li>
+                <li><img width="680" height="250" src="images/main_killarney-image4.jpg" alt="&quot;Killarney National Parks Co Kerry&quot;" /></li>
+
+
+            </ul>
+        </div>
+
+        <div id="content">
+            <div class="content_item">
+                <h1>Welcome To Your Website</h1>
+				<h3>Click on the images below to reveal more about these sites</h3>
+	<div id="wrapper">
+			
+ <div class="accordionButton"><img src = 'images/newgrange-aerial1.jpg'></div>
+		<div class="accordionContent"><h2>Newgrange</h2>Newgrange was constructed over 5,000 years ago (about 3,200 B.C.), making it older than Stonehenge in England and the Great Pyramid of Giza in Egypt. Newgrange was built during the Neolithic or New Stone Age by a farming community that prospered on the rich lands of the Boyne Valley. Knowth and Dowth are similar mounds that together with Newgrange have been designated a World Heritage Site by UNESCO.</div>
+		<div class="accordionButton"><img src = 'images/the-giants-causeway.jpg'></div>
+		<div class="accordionContent"><h2>Giant's Causeway</h2> (known as Clochán an Aifir or Clochán na bhFomhórach in Irish[1] and tha Giant's Causey in Ulster-Scots)[2] is an area of about 40,000 interlocking basalt columns, the result of an ancient volcanic eruption.It is located in County Antrim on the northeast coast of Northern Ireland, about three miles (4.8 km) northeast of the town of Bushmills. It was declared a World Heritage Site by UNESCO in 1986, and a National Nature Reserve in 1987 by the Department of the Environment for Northern Ireland. In a 2005 poll of Radio Times readers, the Giant's Causeway was named as the fourth greatest natural wonder in the United Kingdom.[3] The tops of the columns form stepping stones that lead from the cliff foot and disappear under the sea. Most of the columns are hexagonal, although there are also some with four, five, seven or eight sides. The tallest are about 12 metres (39 ft) high, and the solidified lava in the cliffs is 28 metres thick in places.<br/></div>
+		
+		<div class="accordionButton"><img src = 'images/moher.jpg'></div>
+		<div class="accordionContent"><h2>Cliffs of Moher</h2> (Irish: Aillte an Mhothair)[1] are located at the southwestern edge of the Burren region in County Clare, Ireland.[2] They rise 120 metres (390 ft) above the Atlantic Ocean at Hag's Head, and reach their maximum height of 214 metres (702 ft) just north of O'Brien's Tower, eight kilometres to the north.[3] The cliffs receive almost one million visitors a year.[3]O'Brien's Tower is a round stone tower near the midpoint of the cliffs built in 1835 by Sir Cornelius O'Brien to impress female visitors.[2] From the cliffs and from atop the watchtower, visitors can see the Aran Islands in Galway Bay, the Maumturks and Twelve Pins mountain ranges to the north in County Galway, and Loop Head to the south</div>
+		<div class="accordionButton"><img src = 'images/hill-of Tara.jpg'></div>
+		<div class="accordionContent"><h2>Hill-of Tara</h2> Irish:The Hill of Tara was the Coronation place of Irelands pre-Christian kings, and is one of Irelands more famous sites. This was not an hereditary Kingship, the kings either won it in battle or were chosen for it. Although no buildings survive there are a number of large earthworks still remaining on the hill, some are inside an even larger iron age Hill Fort, known as Ráith na Riogh (The fort of the Kings) or the Royal Enclosure. In the middle of this enclosure are two linked ring shaped earthworks, to the east is Teach Chormaic (Cormac's House) and to the west is the Forradh (The Royal Seat) a large Barrow with smaller barrows in the surrounding banks. <br/></div>
+	</div><!--close accordian-->
+	
+
+                </div><!--close content_container-->
+            </div><!--close content_item-->
+        </div><!--close content-->
+    </div><!--close site_content-->
+
+
+
+
+<div id="footer">
+    &copy; IRELAND.IE IRL COPYRIGHT 2013
+</div><!--close footer-->
+
+</body>
+</html>
